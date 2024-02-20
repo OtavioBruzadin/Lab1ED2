@@ -43,6 +43,6 @@ public class Movie {
     @Override
     public java.lang.String toString(){
 
-        return java.lang.String.format("%s (%d) %2f",this.title,this.launchYear,this.score);
+        return java.lang.String.format("%s (%d) %.1f",this.title,this.launchYear,this.score);
     }
 }

@@ -10,11 +10,12 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int opt = 0;
         while (opt != 3) {
+            System.out.println("1. Carregar dados\n2. Exibir dados\n3. Sair");
             System.out.println("digite seu comando:");
             opt = input.nextInt();
             if (opt == 1) {
                 try {
-                    LinkedList<java.lang.String> movieList = factory.createMovieList("Movies.txt");
+                    LinkedList<java.lang.String> movieList = factory.createMovieList("imdb.txt");
                     objectList = factory.createObjectMovieList(movieList);
                     System.out.println("Filmes carregados com sucesso!");
                 }catch (FileNotFoundException e){
