@@ -5,18 +5,14 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(java.lang.String[] args) throws FileNotFoundException {
-        LinkedList<Movie> MovieList = new LinkedList<>();
-        Movie movie = new Movie("incriveis",2004,8.0);
-        MovieList.add(movie);
-        LinkedList<java.lang.String> movieList = factory.createMovieList("Movies.txt"); // cria Lista de filmes
-        LinkedList<Movie> objectList = factory.createObjectMovieList(movieList); // cria lista de objetos filme
+        //opt1
+        LinkedList<java.lang.String> movieList = factory.createMovieList("Movies.txt");
+        LinkedList<Movie> objectList = factory.createObjectMovieList(movieList);
+        //opt2
+        for (int i = 0; i < objectList.size(); i++) {
+            System.out.println("#"+i+" "+objectList.pop().toString());
+        }
 
-
-        System.out.println(objectList.pop().toString());
-        System.out.println(objectList.pop().toString());
-        System.out.println(objectList.pop().toString());
-        System.out.println(objectList.pop().toString());
-        System.out.println(objectList.pop().toString());
 
     }
 }
