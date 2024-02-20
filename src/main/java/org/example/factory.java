@@ -11,7 +11,7 @@ public class factory {
             LinkedList<java.lang.String> list = new LinkedList<>();
             File myObj = new File(java.lang.String.valueOf(file));
             Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
+            while (myReader.hasNext()) {
                 java.lang.String data = myReader.nextLine();
 
                 list.add(data);

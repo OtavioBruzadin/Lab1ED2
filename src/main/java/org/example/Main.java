@@ -24,7 +24,7 @@ public class Main {
             }if (opt == 2){
                 try {
                     for (int i = 0; i < objectList.size(); i++) {
-                        System.out.println("#" + i + " " + objectList.pop().toString());
+                        System.out.println("#" + (i+1) + " " + objectList.get(i).toString());
                     }
                 }catch (NullPointerException e){
                     System.out.println("Epa! utilize a opcao 1 primeiro!");
